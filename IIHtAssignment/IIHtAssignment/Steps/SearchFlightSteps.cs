@@ -28,20 +28,20 @@ namespace IIHtAssignment.Steps
         [When(@"enter origin as ""(.*)""")]
         public void WhenEnterOriginAs(string Bengaluru)
         {
-           // IWebElement OriginValue = Driver.FindElement(By.XPath("//*[@class='source-code-desktop']"));
-       //  OriginValue.Click();
-         // OriginValue.SendKeys(Bengaluru);
+           IWebElement OriginValue = Driver.FindElement(By.XPath("//*[@class='source-code-desktop']"));
+         OriginValue.Click();
+           OriginValue.SendKeys(Bengaluru);
 
-           // IWebElement PassValue = Driver.FindElement(By.XPath("//*[@class='recent-list-items list-group']"));
-           // PassValue.Click();
+           IWebElement PassValue = Driver.FindElement(By.XPath("//*[@class='recent-list-items list-group']"));
+           PassValue.Click();
         }
 
         [When(@"enter  destination as ""(.*)""")]
         public void WhenEnterDestinationAs(string Pune)
         {
 
-           // IWebElement destination = Driver.FindElement(By.XPath("//*[@id='list - item']"));
-           //destination.Click();
+            IWebElement destination = Driver.FindElement(By.XPath("//*[@id='list - item']"));
+           destination.Click();
         }
 
 
@@ -49,8 +49,8 @@ namespace IIHtAssignment.Steps
         [When(@"select the depart date as ""(.*)""")]
         public void WhenSelectTheDepartDateAs(string date)
         {
-         //  IWebElement departDate = Driver.FindElement(By.XPath("//*[@id='flight - tab']/div[3]/img"));
-           // departDate.Click();
+          IWebElement departDate = Driver.FindElement(By.XPath("//*[@id='flight - tab']/div[3]/img"));
+           departDate.Click();
 
         }
         
